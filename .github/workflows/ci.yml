@@ -17,4 +17,5 @@ jobs:
       - name: Run tests
         run: pytest -q
       - name: Lint
-        run: python -m pip install ruff && ruff .
+        run: python -m pip install ruff && ruff check .
+
