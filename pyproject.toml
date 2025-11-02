@@ -1,0 +1,9 @@
+[project]
+name = "oracle-modern-complete"
+version = "0.1.0"
+description = "Modernized oracle tutorial (Grover) - complete package"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "qiskit>=1.0.0,<2.0.0",
+  "qiskit-aer>=0.17.0",
+]
