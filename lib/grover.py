@@ -1,7 +1,6 @@
 """Grover circuit builder using Qiskit primitives."""
 from __future__ import annotations
 from qiskit import QuantumCircuit
-from qiskit.circuit.library import MCXGate
 
 def _apply_phase_oracle(qc: QuantumCircuit, target_index: int, n_qubits: int):
     bits = format(target_index, f'0{n_qubits}b')[::-1]

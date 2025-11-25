@@ -5,11 +5,11 @@ Usage: python hello.py --seed 42
 """
 
 from __future__ import annotations
-import argparse, random
+import argparse
+import random
 from math import floor, log
 from lib.util import execute, num_qubits, random_letters
 from lib.grover import grover
-from lib.oracles.logic import oracle
 
 
 def init(target: str, n: int, plant_probability: float = 0.7):
@@ -97,4 +97,4 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--seed", type=int, default=None)
     args = p.parse_args()
-    main("sgsfd", seed=args.seed)
+    main("hello", seed=args.seed)
